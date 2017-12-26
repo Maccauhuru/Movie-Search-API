@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const request = require('request');
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 const ip = process.env.IP;
 
 //set up the view engine to render ejs
