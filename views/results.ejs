@@ -1,9 +1,23 @@
-<h1>Welcome to the results page</h1>
+<% include ./partials/header %>
+    
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-5">Results Page</h1>
+        </div>
+        <ul>
+            <%data["Search"].forEach(function(movie){%>
+                <li>
+                    <strong>
+                        <%=movie["Year"]%>
+                    </strong> -
+                    <%=movie["Title"]%>
+                </li>
+                <% });%>
+        </ul>
 
-<ul>
-<%data["Search"].forEach(function(movie){%>
-<li><strong><%=movie["Year"]%></strong> - <%=movie["Title"]%></li>
-<% });%>
-</ul>
+        <a href='/'>
+            <button class="btn btn-primary">Search Again</button>
+        </a>
+    </div>
 
-<a href='/'><button>seach again</button></a>
+    <% include ./partials/footer %>
