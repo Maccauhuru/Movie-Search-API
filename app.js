@@ -7,7 +7,7 @@ const ip = process.env.IP;
 //set up the view engine to render ejs
 app.set("view engine", "ejs");
 
-
+app.use(express.static("public"));
 //create a route for the search page
 app.get('/',function(req,res){
     res.render('search');

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "API that gets movie data from OMDB",
   "main": "app.js",
-  "start":"node app.js",
+  "start": "node app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,10 +18,9 @@
     "express": "^4.16.2",
     "request": "^2.83.0"
   },
-  
-"engines":{
-"node": ">=8"
-},
+  "engines": {
+    "node": ">=8"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Maccauhuru/Movie-Search-API.git"
